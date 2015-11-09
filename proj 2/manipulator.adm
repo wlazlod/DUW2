@@ -1,0 +1,297 @@
+ADAMS/View model name: robot
+!
+!-------------------------------- SYSTEM UNITS ---------------------------------
+!
+UNITS/
+, FORCE = NEWTON
+, MASS = KILOGRAM
+, LENGTH = METER
+, TIME = SECOND
+!
+!----------------------------------- PARTS -------------------------------------
+!
+!----------------------------------- Ground ------------------------------------
+!
+!                            adams_view_name='ground'
+PART/1
+, GROUND
+!
+!                           adams_view_name='MARKER_7'
+MARKER/7
+, PART = 1
+, QP = 0, 0, -0.015
+, REULER = 0D, 180D, 0D
+!
+!                          adams_view_name='os_czlon_1'
+MARKER/13
+, PART = 1
+!
+!                         adams_view_name='os_wirnik_1'
+MARKER/17
+, PART = 1
+!
+!                          adams_view_name='CYLINDER_5'
+GRAPHICS/5
+, CYLINDER
+, CM = 7
+, LENGTH = 0.05
+, RADIUS = 0.05
+!
+!------------------------------------ Part -------------------------------------
+!
+!                           adams_view_name='czlon_1'
+PART/2
+, MASS = 2.164703432
+, CM = 20
+, IP = 0.0155340529, 0.015261253, 5.975054235E-004
+!
+!                           adams_view_name='MARKER_1'
+MARKER/1
+, PART = 2
+!
+!                           adams_view_name='MARKER_2'
+MARKER/2
+, PART = 2
+, QP = 0.25, 0, 0
+!
+!                          adams_view_name='os_czlon_1'
+MARKER/12
+, PART = 2
+!
+!                          adams_view_name='os_czlon_2'
+MARKER/15
+, PART = 2
+, QP = 0.25, 0, 0
+!
+!                         adams_view_name='os_wirnik_2'
+MARKER/19
+, PART = 2
+, QP = 0.25, 0, 0
+!
+!                              adams_view_name='cm'
+MARKER/20
+, PART = 2
+, QP = 0.125, 0, 0
+, REULER = 270D, 90D, 90D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                           adams_view_name='czlon_2'
+PART/3
+, MASS = 0.9236067977
+, CM = 21
+, IP = 0.004241832, 0.0041537933, 1.496125813E-004
+!
+!                           adams_view_name='MARKER_3'
+MARKER/3
+, PART = 3
+, QP = 0.25, 0, 0
+!
+!                           adams_view_name='MARKER_4'
+MARKER/4
+, PART = 3
+, QP = 0.45, 0, 0
+!
+!                          adams_view_name='os_czlon_2'
+MARKER/14
+, PART = 3
+, QP = 0.25, 0, 0
+!
+!                              adams_view_name='cm'
+MARKER/21
+, PART = 3
+, QP = 0.35, 0, 0
+, REULER = 270D, 90D, 90D
+!
+!------------------------------------ Part -------------------------------------
+!
+!                           adams_view_name='wirnik_1'
+PART/4
+, MASS = 0.7110701393
+, CM = 22
+, IP = 2.564743232E-004, 2.521943095E-004, 2.075770279E-004
+!
+!                           adams_view_name='MARKER_5'
+MARKER/5
+, PART = 4
+!
+!                           adams_view_name='MARKER_8'
+MARKER/8
+, PART = 4
+, REULER = 90D, 0D, 0D
+!
+!                           adams_view_name='MARKER_9'
+MARKER/9
+, PART = 4
+, QP = 0, 0.05, 0
+, REULER = 90D, 0D, 0D
+!
+!                         adams_view_name='os_wirnik_1'
+MARKER/16
+, PART = 4
+!
+!                              adams_view_name='cm'
+MARKER/22
+, PART = 4
+, QP = 0, 1.846613806E-004, 0.0248153386
+, REULER = 0D, 4.199375186D, 0D
+!
+!                          adams_view_name='CYLINDER_3'
+GRAPHICS/3
+, CYLINDER
+, CM = 5
+, LENGTH = 0.05
+, RADIUS = 0.024
+!
+!------------------------------------ Part -------------------------------------
+!
+!                           adams_view_name='wirnik_2'
+PART/5
+, MASS = 0.3593865917
+, CM = 23
+, IP = 1.07107895E-004, 1.028342999E-004, 5.546747499E-005
+!
+!                           adams_view_name='MARKER_6'
+MARKER/6
+, PART = 5
+, QP = 0.25, 0, 0
+!
+!                          adams_view_name='MARKER_10'
+MARKER/10
+, PART = 5
+, QP = 0.25, 0, 0
+, REULER = 90D, 0D, 0D
+!
+!                          adams_view_name='MARKER_11'
+MARKER/11
+, PART = 5
+, QP = 0.25, 0.05, 0
+, REULER = 90D, 0D, 0D
+!
+!                         adams_view_name='os_wirnik_2'
+MARKER/18
+, PART = 5
+, QP = 0.25, 0, 0
+!
+!                              adams_view_name='cm'
+MARKER/23
+, PART = 5
+, QP = 0.25, 3.653647539E-004, 0.0246346352
+, REULER = 0D, 3.925026512D, 0D
+!
+!                          adams_view_name='CYLINDER_4'
+GRAPHICS/4
+, CYLINDER
+, CM = 6
+, LENGTH = 0.05
+, RADIUS = 0.017
+!
+!-------------------------------- CONSTRAINTS ----------------------------------
+!
+!                          adams_view_name='os_czlon_1'
+JOINT/1
+, REVOLUTE
+, I = 12
+, J = 13
+!
+!                          adams_view_name='os_czlon_2'
+JOINT/2
+, REVOLUTE
+, I = 14
+, J = 15
+!
+!                         adams_view_name='os_wirnik_1'
+JOINT/3
+, REVOLUTE
+, I = 16
+, J = 17
+!
+!                         adams_view_name='os_wirnik_2'
+JOINT/4
+, REVOLUTE
+, I = 18
+, J = 19
+!
+!                        adams_view_name='przekladnia_1'
+COUPLER/1
+, JOINTS = 3, 1
+, TYPE = R:R
+, SCALES = -1, 20
+!
+!                        adams_view_name='przekladnia_2'
+COUPLER/2
+, JOINTS = 4, 2
+, TYPE = R:R
+, SCALES = -1, 20
+!
+!----------------------------------- FORCES ------------------------------------
+!
+!                           adams_view_name='naped_1'
+SFORCE/1
+, ROTATIONAL
+, I = 16
+, J = 17
+, FUNCTION = VARVAL(1)
+!
+!                           adams_view_name='naped_2'
+SFORCE/2
+, ROTATIONAL
+, I = 18
+, J = 19
+, FUNCTION = VARVAL(2)
+!
+!------------------------------ DATA STRUCTURES --------------------------------
+!
+!                           adams_view_name='moment_1'
+VARIABLE/1
+, IC = 0
+, FUNCTION = 0
+!
+!                           adams_view_name='moment_2'
+VARIABLE/2
+, IC = 0
+, FUNCTION = 0
+!
+!                             adams_view_name='fi_1'
+VARIABLE/3
+, IC = 0
+, FUNCTION = AZ(12, 13)
+!
+!                             adams_view_name='fi_2'
+VARIABLE/4
+, IC = 0
+, FUNCTION = AZ(14, 15)
+!
+!                           adams_view_name='om_wir_1'
+VARIABLE/5
+, IC = 0
+, FUNCTION = WZ(16,17,17)
+!
+!                           adams_view_name='om_wir_2'
+VARIABLE/6
+, IC = 0
+, FUNCTION = WZ(18,19,19)
+!
+!                 adams_view_name='Controls_Plant_1.ctrl_pinput'
+PINPUT/1
+, VARIABLES = 1, 2
+!
+!                adams_view_name='Controls_Plant_1.ctrl_poutput'
+POUTPUT/1
+, VARIABLES = 3, 4, 5, 6
+!
+!------------------------- GRAVITATIONAL ACCELERATION --------------------------
+!
+ACCGRAV/
+, JGRAV = -9.80665
+!
+!----------------------------- ANALYSIS SETTINGS -------------------------------
+!
+OUTPUT/
+, REQSAVE
+, GRSAVE
+!
+RESULTS/
+, XRF
+!
+END
